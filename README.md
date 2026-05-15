@@ -61,13 +61,13 @@ Campus-Parking/
 
 ---
 
-🔐 Acceso al Sistema
+# Acceso al Sistema
 
 El sistema crea automáticamente un usuario administrador inicial.
 
 ---
 
-✨ Funcionalidades
+# Funcionalidades
 
 - Login y Registro
     - Inicio de sesión
@@ -77,7 +77,7 @@ El sistema crea automáticamente un usuario administrador inicial.
 
 ---
 
-✅ Dashboard
+# Dashboard
 
 El dashboard muestra:
 
@@ -90,7 +90,7 @@ Toda la información se actualiza automáticamente según los registros realizad
 
 ---
 
-✅ Gestión de Vehículos
+# Gestión de Vehículos
 
 Permite:
 
@@ -105,7 +105,7 @@ Permite:
 
 ---
 
-✅ Gestión de Parqueo
+# Gestión de Parqueo
 
 Permite registrar:
 
@@ -118,7 +118,7 @@ Slot asignado
 
 ---
 
-✅ Validaciones Implementadas
+# Validaciones Implementadas
 - Placa
 Formato válido: ABC123
 
@@ -131,7 +131,7 @@ La hora de salida debe ser mayor a la hora de entrada
 
 ---
 
-✅ Cálculo Automático
+# Cálculo Automático
 
 El sistema calcula automáticamente:
 - Tiempo de permanencia
@@ -141,7 +141,7 @@ Basado en la tarifa registrada del tipo de vehículo.
 
 ---
 
-✅ Perfil Usuario
+# Perfil Usuario
 
 El usuario puede modificar:
 - Nombre
@@ -152,7 +152,7 @@ Incluye confirmación antes de guardar cambios.
 
 ---
 
-🎯 Objetivos del Proyecto
+# Objetivos del Proyecto
 - Automatizar el control del parqueadero
 - Mejorar la experiencia del usuario
 - Gestionar ingresos
@@ -160,6 +160,6 @@ Incluye confirmación antes de guardar cambios.
 
 ---
 
-👨‍💻 Autor
+# Autor
 
 Proyecto desarrollado por Pablo López Monzón
