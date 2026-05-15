@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<link href="https://cdn.boxicons.com/2.1.4/css/boxicons.min.css"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="../CSS/vehicles.css">
+
+<title>Gestión de Vehículos</title>
+
+</head>
+<body>
+
+<!-- OVERLAY -->
+
+<div class="overlay"></div>
+
+<!-- TOP BAR -->
+
+<div class="top-bar">
+
+    <button class="back-btn"
+    onclick="goBack()">
+
+        <i class='bx bx-arrow-back'></i>
+        Regresar
+
+    </button>
+
+</div>
+
+<!-- CONTAINER -->
+
+<div class="container">
+
+    <!-- HEADER -->
+
+    <div class="header">
+
+        <div>
+
+            <h1>
+                Gestión de Vehículos
+            </h1>
+
+            <p>
+                Administra los tipos de vehículos y tarifas
+            </p>
+
+        </div>
+
+        <div class="header-icon">
+
+            <i class='bx bx-car'></i>
+
+        </div>
+
+    </div>
+
+    <!-- FORM -->
+
+    <div class="form-container">
+
+        <form id="vehicleForm">
+
+            <div class="input-group">
+
+                <label>Código</label>
+
+                <input
+                type="text"
+                id="code"
+                placeholder="Ej: M01"
+                required>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Nombre</label>
+
+                <input
+                type="text"
+                id="name"
+                placeholder="Moto, Automóvil..."
+                required>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Tarifa</label>
+
+                <input
+                type="number"
+                id="price"
+                placeholder="Q por hora"
+                required>
+
+            </div>
+
+            <button type="submit">
+
+                <i class='bx bx-save'></i>
+                Guardar
+
+            </button>
+
+        </form>
+
+    </div>
+
+    <!-- TABLE -->
+
+    <div class="table-container">
+
+        <div class="table-header">
+
+            <h2>Vehículos Registrados</h2>
+
+        </div>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Código</th>
+                    <th>Nombre</th>
+                    <th>Tarifa</th>
+                    <th>Acciones</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="vehicleTable"></tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+<script src="../JS/vehicles.js"></script>
+
+</body>
+</html>

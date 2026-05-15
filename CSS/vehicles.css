@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100..900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Roboto Condensed', sans-serif;
+}
+
+body{
+    min-height:100vh;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,.35),
+        rgba(0,0,0,.35)
+    ),
+    url("../imagenes/tyler-clemmensen-d1Jum1vVLew-unsplash.jpg");
+
+    background-size:cover;
+    background-position:center; 
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+
+    padding:30px;
+
+    color:white;
+
+    overflow-x:hidden;
+}
+
+/* OVERLAY */
+
+.overlay{
+    position:fixed;
+    inset:0;
+
+    backdrop-filter:blur(3px);
+
+    z-index:-1;
+}
+
+/* TOP BAR */
+
+.top-bar{
+    margin-bottom:25px;
+}
+
+.back-btn{
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    background:rgba(255,255,255,.10);
+
+    color:white;
+
+    border:1px solid rgba(255,255,255,.15);
+
+    backdrop-filter:blur(8px);
+
+    padding:13px 20px;
+
+    border-radius:15px;
+
+    cursor:pointer;
+
+    transition:.3s ease;
+
+    font-size:16px;
+}
+
+.back-btn:hover{
+    background:rgba(255,255,255,.18);
+
+    transform:translateX(-5px);
+}
+
+/* CONTAINER */
+
+.container{
+    max-width:1300px;
+    margin:auto;
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    backdrop-filter:blur(12px);
+
+    border-radius:30px;
+
+    padding:35px;
+
+    box-shadow:
+    0 8px 30px rgba(0,0,0,.18);
+}
+
+/* HEADER */
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:35px;
+}
+
+.header h1{
+    font-size:42px;
+    margin-bottom:8px;
+
+    text-shadow:0 2px 10px rgba(0,0,0,.3);
+}
+
+.header p{
+    color:#e5e7eb;
+    font-size:18px;
+}
+
+.header-icon{
+    width:80px;
+    height:80px;
+
+    border-radius:25px;
+
+    background:rgba(255,255,255,.10);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.header-icon i{
+    font-size:42px;
+    color:#93c5fd;
+}
+
+/* FORM */
+
+.form-container{
+    margin-bottom:35px;
+}
+
+form{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+}
+
+.input-group{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+label{
+    color:#f3f4f6;
+    font-size:16px;
+}
+
+input{
+    padding:15px;
+
+    border:none;
+
+    border-radius:15px;
+
+    outline:none;
+
+    background:rgba(255,255,255,.12);
+
+    color:white;
+
+    font-size:16px;
+
+    border:1px solid transparent;
+
+    transition:.3s;
+}
+
+input::placeholder{
+    color:#d1d5db;
+}
+
+input:focus{
+    border-color:#93c5fd;
+
+    background:rgba(255,255,255,.16);
+}
+
+/* BUTTON */
+
+button{
+    border:none;
+
+    border-radius:15px;
+
+    cursor:pointer;
+
+    transition:.3s ease;
+}
+
+form button{
+    background:#2563eb;
+
+    color:white;
+
+    font-size:17px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+
+    padding:15px;
+}
+
+form button:hover{
+    background:#1d4ed8;
+
+    transform:translateY(-3px);
+}
+
+/* TABLE */
+
+.table-container{
+    background:rgba(255,255,255,.06);
+
+    border:1px solid rgba(255,255,255,.10);
+
+    border-radius:25px;
+
+    padding:25px;
+
+    overflow-x:auto;
+}
+
+.table-header{
+    margin-bottom:20px;
+}
+
+.table-header h2{
+    font-size:28px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th,
+td{
+    padding:18px;
+    text-align:left;
+}
+
+th{
+    background:rgba(255,255,255,.12);
+
+    color:#bfdbfe;
+
+    font-size:17px;
+}
+
+td{
+    color:white;
+}
+
+tr{
+    border-bottom:
+    1px solid rgba(255,255,255,.08);
+}
+
+tr:hover{
+    background:rgba(255,255,255,.05);
+}
+
+/* DELETE BUTTON */
+
+td button{
+    background:#ef4444;
+
+    color:white;
+
+    padding:10px 16px;
+
+    border-radius:12px;
+
+    border:none;
+
+    transition:.3s ease;
+}
+
+td button:hover{
+    background:#dc2626;
+
+    transform:scale(1.05);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    body{
+        padding:15px;
+    }
+
+    .container{
+        padding:25px;
+    }
+
+    .header{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:20px;
+    }
+
+    .header h1{
+        font-size:32px;
+    }
+
+    form{
+        grid-template-columns:1fr;
+    }
+
+    table{
+        font-size:14px;
+    }
+}

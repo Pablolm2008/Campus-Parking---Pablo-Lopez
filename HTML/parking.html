@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<link href="https://cdn.boxicons.com/2.1.4/css/boxicons.min.css"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="../CSS/parking.css">
+
+<title>Registro de Parqueo</title>
+
+</head>
+<body>
+
+<!-- OVERLAY -->
+
+<div class="overlay"></div>
+
+<!-- TOP BAR -->
+
+<div class="top-bar">
+
+    <button class="back-btn"
+    onclick="goBack()">
+
+        <i class='bx bx-arrow-back'></i>
+        Regresar
+
+    </button>
+
+</div>
+
+<!-- CONTAINER -->
+
+<div class="container">
+
+    <!-- HEADER -->
+
+    <div class="header">
+
+        <div>
+
+            <h1>
+                Registro de Parqueo
+            </h1>
+
+            <p>
+                Administra entradas, salidas y costos
+            </p>
+
+        </div>
+
+        <div class="header-icon">
+
+            <i class='bx bx-parking'></i>
+
+        </div>
+
+    </div>
+
+    <!-- FORM -->
+
+    <div class="form-container">
+
+        <form id="parkingForm">
+
+            <div class="input-group">
+
+                <label>Placa</label>
+
+                <input
+                type="text"
+                id="plate"
+                placeholder="ABC123"
+                required>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Tipo de vehículo</label>
+
+                <select id="vehicleType"></select>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Fecha</label>
+
+                <input
+                type="date"
+                id="date"
+                required>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Hora entrada</label>
+
+                <input
+                type="time"
+                id="entryHour"
+                required>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Hora salida</label>
+
+                <input
+                type="time"
+                id="exitHour"
+                required>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Slot</label>
+
+                <input
+                type="number"
+                id="slot"
+                placeholder="Espacio"
+                required>
+
+            </div>
+
+            <button type="submit">
+
+                <i class='bx bx-save'></i>
+                Registrar
+
+            </button>
+
+        </form>
+
+    </div>
+
+    <!-- TABLE -->
+
+    <div class="table-container">
+
+        <div class="table-header">
+
+            <h2>
+                Vehículos Registrados
+            </h2>
+
+        </div>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Placa</th>
+                    <th>Tipo</th>
+                    <th>Slot</th>
+                    <th>Entrada</th>
+                    <th>Salida</th>
+                    <th>Total</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="parkingTable"></tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+<script src="../JS/parking.js"></script>
+
+</body>
+</html>
