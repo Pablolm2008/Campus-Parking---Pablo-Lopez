@@ -30,7 +30,7 @@ El proyecto fue desarrollado con enfoque en:
 
 # 📂 Estructura del Proyecto
 
-```bash
+```text
 Campus-Parking/
 │
 ├── HTML/
@@ -58,7 +58,7 @@ Campus-Parking/
 │   └── dashboard-bg.jpg
 │
 └── README.md
-'''
+```
 ---
 
 # Acceso al Sistema
