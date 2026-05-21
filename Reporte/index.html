@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--REPORTE DE SERVICIOS-->
+
+<section class="report-section">
+
+    <!-- TITULO -->
+
+    <div class="report-title">
+
+        <h2>
+            Reporte de Servicios Prestados
+        </h2>
+
+        <p>
+            Consulta de vehículos
+            por rango de fechas
+        </p>
+
+    </div>
+
+    <!-- FILTROS -->
+
+    <div class="report-filters">
+
+        <div class="filter-group">
+
+            <label>
+                Fecha Inicial
+            </label>
+
+            <input
+            type="date"
+            id="start-date">
+
+        </div>
+
+        <div class="filter-group">
+
+            <label>
+                Fecha Final
+            </label>
+
+            <input
+            type="date"
+            id="end-date">
+
+        </div>
+
+        <div class="filter-group">
+
+            <button
+            class="report-btn"
+            onclick="generateReport()">
+
+                Generar Reporte
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- RESUMEN -->
+
+    <div class="report-cards">
+
+        <div class="report-card">
+
+            <h3>
+                Total Vehículos
+            </h3>
+
+            <p id="total-vehicles">
+                0
+            </p>
+
+        </div>
+
+        <div class="report-card">
+
+            <h3>
+                Total Captado
+            </h3>
+
+            <p id="total-income">
+                Q0.00
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- TABLA -->
+
+    <div class="table-container">
+
+        <table class="report-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Placa
+                    </th>
+
+                    <th>
+                        Tipo Vehículo
+                    </th>
+
+                    <th>
+                        Horas Parqueo
+                    </th>
+
+                    <th>
+                        Valor Servicio
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="report-body">
+
+                <!-- DATOS DINAMICOS -->
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+</body>
+</html>

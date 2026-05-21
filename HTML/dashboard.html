@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet"
+href="../CSS/dashboard.css">
+
+<link href="https://cdn.boxicons.com/2.1.4/css/boxicons.min.css"
+rel="stylesheet">
+
+<title>Dashboard | Campus Parking</title>
+
+</head>
+<body>
+
+<div class="overlay"></div>
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+    <div class="logo">
+
+        <i class='bx bx-parking'></i>
+        <h2>Campus Parking</h2>
+
+    </div>
+
+    <div class="menu">
+
+        <!-- INICIO -->
+
+        <a href="dashboard.html"
+        class="active">
+
+            <i class='bx bx-home'></i>
+            Inicio
+
+        </a>
+
+        <!-- VEHICULOS -->
+
+        <a href="vehicles.html">
+
+            <i class='bx bx-car'></i>
+            Vehículos
+
+        </a>
+
+        <!-- PARQUEOS -->
+
+        <a href="parking.html">
+
+            <i class='bx bx-parking'></i>
+            Parqueos
+
+        </a>
+
+        <!-- NUEVO REPORTE -->
+
+        <a href="../Reporte/index.html">
+
+            <i class='bx bx-bar-chart-alt-2'></i>
+            Reportes
+
+        </a>
+
+        <!-- PERFIL -->
+
+        <a href="profile.html">
+
+            <i class='bx bx-user'></i>
+            Perfil
+
+        </a>
+
+    </div>
+
+    <div class="logout">
+
+        <a href="#"
+        id="logoutBtn">
+
+            <i class='bx bx-log-out'></i>
+            Cerrar sesión
+
+        </a>
+
+    </div>
+
+</div>
+
+<!-- MAIN -->
+
+<div class="main">
+
+    <!-- HEADER -->
+
+    <div class="header">
+
+        <div>
+
+            <h1>Bienvenido</h1>
+
+            <p id="welcomeUser"></p>
+
+        </div>
+
+        <div class="admin-icon">
+
+            <i class='bx bx-user-circle'></i>
+
+        </div>
+
+    </div>
+
+    <!-- CARDS -->
+
+    <div class="cards">
+
+        <!-- VEHICULOS -->
+
+        <div class="card">
+
+            <div class="card-icon">
+
+                <i class='bx bx-car'></i>
+
+            </div>
+
+            <div>
+
+                <h2 id="totalVehicles">
+                    0
+                </h2>
+
+                <p>Vehículos activos</p>
+
+            </div>
+
+        </div>
+
+        <!-- INGRESOS -->
+
+        <div class="card">
+
+            <div class="card-icon">
+
+                <i class='bx bx-money'></i>
+
+            </div>
+
+            <div>
+
+                <h2 id="totalRevenue">
+                    Q0
+                </h2>
+
+                <p>Ingresos generados</p>
+
+            </div>
+
+        </div>
+
+        <!-- SLOTS -->
+
+        <div class="card">
+
+            <div class="card-icon">
+
+                <i class='bx bx-check-circle'></i>
+
+            </div>
+
+            <div>
+
+                <h2 id="slotsAvailable">
+                    50
+                </h2>
+
+                <p>Slots disponibles</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- TABLA -->
+
+    <div class="table-container">
+
+        <div class="table-header">
+
+            <h2>
+                Vehículos recientes
+            </h2>
+
+        </div>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Placa</th>
+                    <th>Tipo</th>
+                    <th>Slot</th>
+                    <th>Entrada</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="dashboardTable">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+<script src="../JS/dashboard.js"></script>
+
+</body>
+</html>

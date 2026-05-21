@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<link href="https://cdn.boxicons.com/2.1.4/css/boxicons.min.css"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="../CSS/parking.css">
+
+<title>Registro de Parqueo</title>
+
+</head>
+<body>
+
+<!-- OVERLAY -->
+
+<div class="overlay"></div>
+
+<!-- TOP BAR -->
+
+<div class="top-bar">
+
+    <button class="back-btn"
+    onclick="goBack()">
+
+        <i class='bx bx-arrow-back'></i>
+        Regresar
+
+    </button>
+
+</div>
+
+<!-- CONTAINER -->
+
+<div class="container">
+
+    <!-- HEADER -->
+
+    <div class="header">
+
+        <div>
+
+            <h1>
+                Registro de Parqueo
+            </h1>
+
+            <p>
+                Control de vehículos y espacios
+            </p>
+
+        </div>
+
+        <div class="header-icon">
+
+            <i class='bx bx-parking'></i>
+
+        </div>
+
+    </div>
+
+    <!-- FORM -->
+
+    <div class="form-container">
+
+        <form id="parkingForm">
+
+            <!-- PLACA -->
+
+            <div class="input-group">
+
+                <label>Placa</label>
+
+                <input
+                type="text"
+                id="plate"
+                placeholder="P123ABC"
+                maxlength="10"
+                autocomplete="off"
+                required>
+
+            </div>
+
+            <!-- TIPO -->
+
+            <div class="input-group">
+
+                <label>
+                    Tipo de vehículo
+                </label>
+
+                <select
+                id="vehicleType"
+                required>
+
+                    <option value="">
+                        Seleccione
+                    </option>
+
+                </select>
+
+            </div>
+
+            <!-- FECHA -->
+
+            <div class="input-group">
+
+                <label>Fecha</label>
+
+                <input
+                type="date"
+                id="date"
+                required>
+
+            </div>
+
+            <!-- HORA ENTRADA -->
+
+            <div class="input-group">
+
+                <label>
+                    Hora entrada
+                </label>
+
+                <input
+                type="time"
+                id="entryHour"
+                required>
+
+            </div>
+
+            <!-- SLOT -->
+
+            <div class="input-group">
+
+                <label>Slot</label>
+
+                <input
+                type="number"
+                id="slot"
+                placeholder="Ej: 12"
+                min="1"
+                required>
+
+            </div>
+
+            <!-- BOTON -->
+
+            <button type="submit">
+
+                <i class='bx bx-save'></i>
+
+                Registrar Vehículo
+
+            </button>
+
+        </form>
+
+    </div>
+
+    <!-- TABLE -->
+
+    <div class="table-container">
+
+        <div class="table-header">
+
+            <h2>
+                Vehículos Registrados
+            </h2>
+
+        </div>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Placa</th>
+                    <th>Tipo</th>
+                    <th>Fecha</th>
+                    <th>Entrada</th>
+                    <th>Slot</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="parkingTable">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+<script src="../JS/parking.js"></script>
+
+</body>
+</html>
